@@ -1,0 +1,25 @@
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"  [src]="selectedProduct.image" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1"></div>
+                <h1 class="display-5 fw-bolder"></h1>
+                <div class="fs-5 mb-5">
+                    <p class="lead">Name: <span class="fw-bold">{{selectedProduct.name}}</span> </p>
+                <p class="lead">Price: <span class="fw-bold">{{selectedProduct.price}}</span></p>
+                <p class="lead">Quantity: <span class="fw-bold">{{selectedProduct.qty}}</span> </p>
+                <p class="lead">Information: <span class="fw-bold">{{selectedProduct.info}} </span></p> 
+                </div>
+                <div class="d-flex">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem;" />
+                    <button class="btn btn-outline-success flex-shrink-0" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
